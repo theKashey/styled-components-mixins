@@ -1,13 +1,15 @@
 This project is a part of `*-mixins`, with goal to provide better __CSS__ expirence
  to __React__ infected people.
 
-Includes: 
+Includes:
+ - https://github.com/tachyons-css/tachyons/
  - https://github.com/twbs/bootstrap
  - https://github.com/turretcss/turretcss
  - https://github.com/monarkee/beard
  - https://github.com/basscss/basscss
- - https://github.com/tachyons-css/tachyons/
-
+ 
+Jump to demo:
+[![Edit Styled Components](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/qkv82lk6l6)
 
 Atomic (or Functional) css is quite good methodology, 
 but as long it solves many issues - it also introduces a new one.
