@@ -1,16 +1,32 @@
-This project is a part of `*-mixins`, with goal to provide better __CSS__ expirence
- to __React__ infected people.
+This project is a part of `*-mixins`, with goal to provide a better __CSS__ experience
+ to the __React__ infected people.
+## Install
+[![NPM](https://nodei.co/npm/styled-components-mixins.png?downloads=true&stars=true)](https://nodei.co/npm/styled-components-mixins/)
 
-Includes:
+## Use
+```js
+ // import classes you need from the library you need.
+ import {class1, class2} from 'styled-components-mixins/{LIBRARY}';
+ // use them as mixins
+ const Component = styled.div`
+    ${class1}
+    z-index: 1;
+ `;
+```
+
+## Includes:
  - https://github.com/tachyons-css/tachyons/
  - https://github.com/twbs/bootstrap
  - https://github.com/turretcss/turretcss
  - https://github.com/monarkee/beard
  - https://github.com/basscss/basscss
  
-Jump to demo:
+if you need more - raise an issue, open a PR, or use webpack`s [css-to-js-loader](https://github.com/theKashey/css-to-js-loader).
+ 
+# Demo 
 [![Edit Styled Components](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/qkv82lk6l6)
 
+# Theory
 Atomic (or Functional) css is quite good methodology, 
 but as long it solves many issues - it also introduces a new one.
 
@@ -48,8 +64,32 @@ const Button = styled.button`
 `
 ```
 
+# Limitations
+ *-Mixins can provide only __mixins__. A single class, style, or an atom.
+ 
+ If some library has selector like:
+```css
+  .someclass .someanotherClass
+```
+ *-Mixins will provide only .someclass, and adding .someanotherClass to the html markup - is your duty.
+ No magic.
+
+# Naming conversion
+ One cannot use real `css` names in js, so we have to convert names to a js-friendly format:
+ - ".class" becomes class
+ - "tag" becomes tag_tag
+ - "#id" becomes $id
+ - "hover-bg" becomes hover_bg
+ - "block--element" becomes block$$element
+ - ".class.anotherclass" becomes class_and_anotherclass  
+
+# Prior art
  
 Idea was found here - https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
+
 This is just an adoptation for a different style of CSS generation.
 
 ![idea](http://kashey.ru/img/classMixins.gif)
+
+# Licence
+ MIT

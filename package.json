@@ -1,6 +1,6 @@
 {
   "name": "styled-components-mixins",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Popular libraries as mixins for styled-components",
   "main": "lib/index.js",
   "scripts": {
