@@ -1,12 +1,13 @@
 {
   "name": "styled-components-mixins",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Popular libraries as mixins for styled-components",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib"
   },
   "files": [
+    "lib",
     "basscss",
     "bears",
     "bootstrap",
@@ -30,5 +31,9 @@
     "babel-core": "6.26.0",
     "babel-register": "6.26.0",
     "babel-preset-latest": "6.24.1"
+  },
+  "@std/esm": {
+    "esm": "all",
+    "cjs": "all"
   }
 }

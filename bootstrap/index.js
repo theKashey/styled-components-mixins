@@ -1,1 +1,1 @@
-module.exports = require('../lib/bootstrap/index')
+module.exports = require('../lib/bootstrap/index');

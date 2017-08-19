@@ -50,4 +50,4 @@ const Button = styled.button`
 Idea was found here - https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
 This is just an adoptation for a different style of CSS generation.
 
-![idea](http://kashey.ru/classMixins.gif)
+![idea](http://kashey.ru/img/classMixins.gif)
