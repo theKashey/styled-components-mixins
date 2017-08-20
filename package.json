@@ -1,6 +1,6 @@
 {
   "name": "styled-components-mixins",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Popular libraries as mixins for styled-components",
   "main": "lib/index.js",
   "scripts": {
@@ -15,8 +15,12 @@
     "tachyons",
     "turretcss"
   ],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theKashey/styled-components-mixins"
+  },
+  "author": "Anton Korzunov (thekashey@gmail.com)",
+  "license": "MIT",
   "peerDependencies": {
     "styled-components": "*"
   },
@@ -24,7 +28,7 @@
     "basscss": "^8.0.3",
     "beardcss": "2.2.4",
     "bootstrap": "^4.0.0-beta",
-    "postcss-to-js": "0.0.2",
+    "postcss-to-js": "^0.0.4",
     "tachyons": "^4.8.1",
     "turretcss": "^4.0.4",
     "babel-cli": "^6.26.0",
