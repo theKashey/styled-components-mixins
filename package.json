@@ -1,6 +1,6 @@
 {
   "name": "styled-components-mixins",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Popular libraries as mixins for styled-components",
   "main": "lib/index.js",
   "scripts": {
@@ -13,7 +13,8 @@
     "bootstrap",
     "bootstrap-grid",
     "tachyons",
-    "turretcss"
+    "turretcss",
+    "materialize"
   ],
   "repository": {
     "type": "git",
@@ -25,16 +26,17 @@
     "styled-components": "*"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "6.26.0",
+    "babel-preset-latest": "6.24.1",
+    "babel-register": "6.26.0",
     "basscss": "^8.0.3",
     "beardcss": "2.2.4",
     "bootstrap": "^4.0.0-beta",
+    "materialize-css": "^0.100.1",
     "postcss-to-js": "^0.0.4",
     "tachyons": "^4.8.1",
-    "turretcss": "^4.0.4",
-    "babel-cli": "^6.26.0",
-    "babel-core": "6.26.0",
-    "babel-register": "6.26.0",
-    "babel-preset-latest": "6.24.1"
+    "turretcss": "^4.0.4"
   },
   "@std/esm": {
     "esm": "all",

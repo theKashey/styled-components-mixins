@@ -18,8 +18,10 @@ This project is a part of `*-mixins`, with goal to provide a better __CSS__ expe
  - https://github.com/tachyons-css/tachyons/
  - https://github.com/twbs/bootstrap
  - https://github.com/turretcss/turretcss
+ - https://github.com/Dogfalo/materialize
  - https://github.com/monarkee/beard
  - https://github.com/basscss/basscss
+ 
  
 if you need more - raise an issue, open a PR, or use webpack`s [css-to-js-loader](https://github.com/theKashey/css-to-js-loader).
  

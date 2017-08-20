@@ -5,7 +5,6 @@ function DO(prefix, files) {
   console.log('do', prefix, files[0]);
 
   const ast = converter.parseAst(fs.readFileSync('node_modules/' + files[0]));
-  //console.log(ast[':root']);
   const result = converter.toStyled(ast).map(line => 'export const ' + line[0] + ' = ' + line[1] + ';').join('\n');
   fs.writeFileSync(`src/${prefix}/index.js`, `
     import { css, injectGlobal }  from 'styled-components';\n    
@@ -17,23 +16,24 @@ function DO(prefix, files) {
 
 DO('tachyons', ['tachyons/css/tachyons.css']);
 
-if (1) {
 //turretcss
 
-  DO('turretcss', ['turretcss/dist/turretcss.min.css']);
+DO('turretcss', ['turretcss/dist/turretcss.min.css']);
+
+//materialize
+
+DO('materialize', ['materialize-css/dist/css/materialize.css']);
 
 //basscss
 
-  DO('basscss', ['basscss/css/basscss-cp.css']);
+DO('basscss', ['basscss/css/basscss-cp.css']);
 
 // beard
 
-  DO('beard', ['beardcss/dist/beard.css']);
+DO('beard', ['beardcss/dist/beard.css']);
 
 //bootstrap
 
-  DO('bootstrap', ['bootstrap/dist/css/bootstrap.css']);
+DO('bootstrap', ['bootstrap/dist/css/bootstrap.css']);
 
-  DO('bootstrap-grid', ['bootstrap/dist/css/bootstrap-grid.css']);
-}
-;
+DO('bootstrap-grid', ['bootstrap/dist/css/bootstrap-grid.css']);
