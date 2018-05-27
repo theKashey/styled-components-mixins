@@ -26,7 +26,7 @@ This project is a part of `*-mixins`, with goal to provide a better __CSS__ expe
 if you need more - raise an issue, open a PR, or use webpack`s [css-to-js-loader](https://github.com/theKashey/css-to-js-loader).
  
 # Demo 
-[![Edit Styled Components](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/qkv82lk6l6)
+[![Edit Styled Components](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/qkv82lk6l6) [![Greenkeeper badge](https://badges.greenkeeper.io/theKashey/styled-components-mixins.svg)](https://greenkeeper.io/)
 
 # Theory
 Atomic (or Functional) css is quite good methodology, 
